@@ -1,0 +1,17 @@
+.tablesorter thead tr .header span {
+	background-image: url(../images/tablesorter/bg2.gif);
+	background-repeat: no-repeat;
+	background-position: 4px 50%;
+	cursor: pointer;
+	padding-left:17px;
+}
+.tablesorter thead tr .headerSortUp span  {
+	background-image: url(../images/tablesorter/asc2.gif);
+}
+.tablesorter thead tr .headerSortDown span  {
+	background-image: url(../images/tablesorter/desc2.gif);
+}/*
+.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+background-color:#60509e;
+}
+*/

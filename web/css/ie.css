@@ -1,0 +1,26 @@
+.ie-zoomfix,
+.col-float {
+zoom:1;
+}
+
+* html .topmenu-sub {
+background:#47395e;
+}
+* html .topmenu-link {
+display:inline;
+zoom:1;
+}
+.staff-list .staff-unit li {
+_overflow:hidden;
+zoom:1;
+*display:inline;
+}
+* html .top_head {
+background:#47395e;
+width:990px;
+}
+.zayavka
+{
+	background:#5e4f9d;
+	opacity:1;
+}

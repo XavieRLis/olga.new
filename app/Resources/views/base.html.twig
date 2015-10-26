@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru-RU">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>{% block title %}Ольга Малкова. Фотограф. Репортажная и концертная съемка{% endblock %}</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/normalize.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/styles.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- least.js 2 CSS file -->
+    <link href="{{ asset('vendor/css/least.min.css') }}" rel="stylesheet" />
+
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+<div class="wrapper">
+    <header>
+        <div class="logo"><a href="{{ path('homepage') }}"><img src="{{ asset('images/layout/logo_2.png') }}" width="205" height="56" alt="Ольга Малкова. Фотограф"> </a></div>
+    </header>
+    <nav>
+        {{ knp_menu_render('AppBundle:Builder:mainMenu', {'currentAsLink': false}) }}
+    </nav>
+    <div id="main_content" class="clearfix">
+        {% block content %}
+            <div class="main">
+                <img src="{{ asset('images/layout/main_logo_2.png') }}" width="804" height="153" alt="Ольга Малкова. Фотограф">
+            </div>
+        {% endblock %}
+    </div>
+    <div class="footer-push"></div>
+</div>
+
+<footer>© Olga Malkova</footer>
+<!-- jQuery library -->
+<script src="{{ asset('vendor/js/libs/jquery/2.0.2/jquery.min.js') }}"></script>
+<!-- least.js 2 library -->
+<script src="{{ asset('vendor/js/libs/least/least.min.js') }}"></script>
+{% block inline_js %}
+{% endblock %}
+</body>
+</html>

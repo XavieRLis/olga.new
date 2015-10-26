@@ -1,0 +1,10 @@
+
+{% extends 'base.html.twig' %}
+{% block title %}
+    {{ entity.metaTitle }}
+{% endblock %}
+{% block content %}
+    <div class="contacts">
+        {{ entity.body|raw }}
+    </div>
+{% endblock %}

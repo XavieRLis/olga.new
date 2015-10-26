@@ -1,0 +1,417 @@
+body {
+font-family: 'Tahoma';
+color: #000;
+background: #fff;
+}
+body.admin-login {
+background: #4a3991;
+}
+a {
+text-decoration: underline;
+color: #000;
+}
+a:hover {
+color: #777;
+}
+body.admin-login a {
+text-decoration: underline;
+color: #cccccc;
+}
+body.admin-login a:hover {
+color: #fff;
+}
+h1 {
+font-size:1.58em;
+font-weight:bold;
+margin:0 0 10px;
+color:#363636;
+}
+h2 {
+font-size:1.42em;
+font-weight:bold;
+margin:0 0 5px;
+color:#363636;
+}
+#login-form, #login-error  {
+font-size:1.2em;
+line-height:1.5;
+background-color: #2a2052;
+border:1px solid #bbb;
+color:#cccccc;
+text-align:center;
+width:220px;
+position:absolute;
+left:50%;
+top:50%;
+margin-left:-150px;
+}
+#login-form  h1 {
+color:#cccccc;
+}
+#login-form {
+height:150px;
+padding:10px 40px 0;
+margin-top:-80px;
+}
+#login-form .i-simple {
+width:160px;
+}
+#login-form .i-border {
+border:1px solid #a0a0a0;
+}
+#login-form table {
+width:220px;
+}
+#login-form table td {
+text-align:right;
+padding:2px 3px;
+}
+#login-error {
+padding:10px 40px;
+margin-top:-80px;
+margin-top:90px;
+}
+
+#overall {
+min-width:980px;
+font-size:1.2em;
+line-height:1.5;
+color:#000;
+}
+#exit {
+position:absolute;
+right:20px;
+height:40px;
+background:#dde8fb;
+line-height:40px;
+text-align:right;
+padding:0 20px;
+color:#000;
+}
+#exit a:hover{
+color:#000;
+text-decoration:none;
+}
+#exit img {
+vertical-align:text-bottom;
+}
+#content {
+padding:20px;
+}
+
+.form-hint {
+font-size:10px;
+color:#999;
+}
+.form-hint a{
+color:#999;
+}
+.form-hint a:hover{
+color:#676767;
+}
+
+.admin-menu {
+list-style:none;
+margin:0;
+}
+.admin-menu li {
+margin:0 10px 10px 0;
+clear:both;
+}
+.admin-menu a {
+display:block;
+border:1px solid #bbb;
+padding:15px 10px 15px 70px;
+margin-bottom:10px;
+font-size:18px;
+width:140px;
+background-color:#dde8fb;
+background-position:20px 50%;
+background-repeat:no-repeat;
+text-decoration:none;
+color:#333;
+text-align:center;
+}
+.admin-menu-second a {
+width:150px;
+background-position:15px 50%;
+}
+.admin-menu a:hover {
+color:#333;
+background-color:#eaf1fd;
+}
+.admin-menu li.announce a {
+background-image:url('../images/icons/menu_comment.png');
+}
+.admin-menu li.users a {
+background-image:url('../images/icons/menu_users.png');
+}
+.admin-menu li.sidebar a {
+background-image:url('../images/icons/menu_sidebar.png');
+}
+.admin-menu li.content a {
+background-image:url('../images/icons/menu_content.png');
+}
+.admin-menu li.header a {
+background-image:url('../images/icons/menu_header.png');
+}
+.admin-menu li.calc a {
+background-image:url('../images/icons/menu_calc.png');
+}
+.admin-menu li.logs a {
+background-image:url('../images/icons/menu_logs.png');
+}
+.admin-menu li.calendar a {
+background-image:url('../images/icons/auto_moto.png');
+}
+.admin-menu li.auto-car a {
+background-image:url('../images/icons/auto_car.png');
+background-position:17px 30%;
+}
+.admin-menu li.auto-moto a {
+background-image:url('../images/icons/auto_moto.png');
+}
+.admin-menu li.auto-special a {
+background-image:url('../images/icons/auto_special.png');
+}
+.admin-menu li.docs a {
+background-image:url('../images/icons/menu_docs.png');
+}
+.admin-menu li.archive a {
+background-image:url('../images/icons/menu_archive.png');
+}
+.admin-menu li.back a {
+background-image:url('../images/icons/menu_back.png');
+}
+.admin-menu li.add_op a {
+background-image:url('../images/icons/add_op.png');
+}
+.admin-menu li.schedule a {
+background-image:url('../images/icons/schedule.png');
+}
+.admin-menu li.wheels a {
+background-image:url('../images/icons/wheels.png');
+}
+
+.delete-confirm {
+border:1px solid #ccc;
+padding:10px;
+}
+.delete-confirm img {
+float:left;
+margin-right:10px;
+}
+
+ul.errors-list {
+list-style:none;
+}
+ul.errors-list li, p.errors-list {
+background:url('/static/images/icons/error.png') no-repeat 0 55%;
+padding-left:20px;
+}
+ul.success-list {
+list-style:none;
+}
+ul.success-list li, p.success-list {
+background:url('../images/icons/success.png') no-repeat 0 55%;
+padding-left:20px;
+}
+.attention, p.attention {
+background:url('/static/images/icons/attention.png') no-repeat 0 55%;
+padding-left:20px;
+}
+
+.p-l-20 {
+padding-left:20px;
+}
+
+select, input.border, textarea, #login-form input {
+border:1px solid #a0a0a0;
+}
+.width-medium {
+width:188px;
+}
+.width-short{
+width:150px;
+}
+.width-big {
+width:300px;
+}
+select.width-big {
+width:302px;
+}
+.width-date {
+width:70px;
+text-align:center;
+}
+.ta-simple {
+width:300px;
+height:150px;
+border:1px solid #a0a0a0;
+}
+.ta-extended {
+width:500px;
+height:100px;
+border:1px solid #a0a0a0;
+}
+.ta-full {
+width:100%;
+height:80px;
+border:1px solid #a0a0a0;
+margin:0 -1px;
+}
+
+.menu-structure {
+width:100%;
+text-align:left;
+border-collapse:collapse;
+table-layout:auto;
+}
+.menu-structure th {
+font-size:15px;
+padding:0 30px 10px 10px;
+border-bottom:2px solid #ccc;
+text-align:left;
+}
+.menu-structure td {
+font-size:12px;
+padding:5px 30px 0 10px;
+border:0;
+text-align:left;
+}
+
+.calc-st td {
+background:#fcdd76 !important;
+}
+.calc-de td {
+background:#fbec5d !important;
+}
+.calc-sd td {
+background:#d0f0c0 !important;
+}
+
+.calc-err {
+background:#ffc0cb;
+}
+.calc-tarif input {
+border:1px solid #999;
+}
+
+.car-extra {
+width:100%;
+border-collapse:collapse;
+}
+.car-extra td {
+padding:3px 5px;
+}
+.car-extra input {
+margin-left:0;
+padding-left:0;
+}
+
+ul.photo-gallery  {
+list-style:none;
+margin:0;
+}
+ul.photo-gallery  li {
+display:block;
+float:left;
+margin: 0 10px 10px 0;
+position:relative;
+}
+ul.photo-gallery  img.photo, .gallery-photo {
+display:block;
+padding:2px;
+border:1px solid #bbb;
+}
+ul.photo-gallery a.action {
+display:block;
+position:absolute;
+right:4px;
+top:4px;
+z-index:88;
+}
+ul.photo-gallery a.action2 {
+display:block;
+position:absolute;
+right:20px;
+top:4px;
+z-index:88;
+}
+ul.photo-gallery a.action img,
+ul.photo-gallery a.action2 img{
+display:block;
+margin:2px;
+}
+.val select
+{
+
+	background-color:#309;
+	color:#FFF;
+	margin:0px;
+	padding:0px;
+	width:130px;
+
+}
+.val
+{
+	background:url(../images/val_back.png) repeat;
+	color:#FFF;
+	margin:0px;
+	padding:0px;
+	text-align:left;
+
+
+}
+.pal
+{	background:url(../images/pal_back.png) repeat;
+
+	margin:0px;
+	padding:0px;
+	text-align:left;
+}
+.pal select
+{
+	background:#F60;
+	margin:0px;
+	padding:0px;
+	width:130px;
+}
+.ual
+{
+	background-color:#a80000;
+	color:#FFF;
+	margin:0px;
+	padding:0px;
+	text-align:left;
+}
+.ual select
+{
+	background:#a80000;
+	color:#FFF;
+	margin:0px;
+	padding:0px;
+	width:130px;
+}
+#buy td
+{
+	background-color:#ffc262;
+}
+#zalog td
+{
+	background-color:#b283ff;
+}
+#fee td
+{
+	background-color:#d1b7fd;
+}
+#sell td
+{
+	background-color:#000;
+	color:#FFF;
+}
+#sell a
+{
+	background-color:#000;
+	color:#FFF;
+}

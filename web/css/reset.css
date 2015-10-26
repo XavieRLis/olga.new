@@ -1,0 +1,45 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption  {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+}
+table, tbody, tfoot, thead, tr, th, td {
+margin: 0;
+}
+table, tbody, tfoot, thead{
+padding: 0;
+}
+
+:focus {
+outline: none;
+}
+html {
+font-size:100.01%;
+}
+body {
+font-size:62.5%;
+line-height: 1;
+}
+p{
+	margin: 0.6em 0;
+}
+ul, ol {
+margin: 0 1em 1.2em 3em;
+}
+ul ul, ul ol, ol ul, ol ol {
+margin: .5em 1em .5em 3em;
+}
+input {
+vertical-align: middle;
+}
+table td {
+vertical-align:top;
+}

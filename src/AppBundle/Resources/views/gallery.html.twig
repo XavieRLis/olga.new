@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+{% block content %}
+    <section id="least">
+
+        <!-- Least Gallery: Fullscreen Preview -->
+        <div class="least-preview"></div>
+
+        <!-- Least Gallery: Thumbnails -->
+        <ul class="least-gallery">
+            <!-- 1th thumbnail -->
+            {% for image in gallery.images %}
+            <li>
+                {% set imageURL = vich_uploader_asset(image, 'imageFile') %}
+                <a href="{{ imageURL }}"data-caption="{{ image.title }}" >
+                    <img src="{{ imageURL|imagine_filter('thumbs') }}" alt="{{ image.title }}" />
+                </a>
+            </li>
+            {% endfor %}
+
+        </ul>
+
+    </section>
+
+{% endblock %}
+{% block inline_js %}
+    <script>
+        $(document).ready(function(){
+            $('.least-gallery').least();
+        });
+    </script>
+    {% endblock %}

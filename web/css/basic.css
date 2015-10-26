@@ -1,0 +1,40 @@
+.no-margin { margin: 0 !important; }
+.no-padding { padding: 0 !important; }
+
+.a-left { text-align: left; }
+.a-center { text-align: center; }
+.a-right { text-align: right; }
+
+.va-middle { vertical-align: middle; }
+.va-top { vertical-align: top; }
+.va-baseline { vertical-align: baseline; }
+
+.f-left { float: left; }
+.f-right { float: right; }
+.f-clear { clear:both; height:0; font-size:0; line-height:0; margin:0; padding:0; }
+.f-clear-both { clear:both; }
+
+.display-block { display:block; }
+.hidden { display:none; }
+
+.width_100 { width:100%; }
+.cursor-pointer { cursor:pointer; }
+
+.clearfix:after {
+content: "."; 
+display: block; 
+height: 0; 
+clear: both; 
+visibility: hidden;
+}
+
+.clearfix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+.col-float {
+overflow:hidden;
+}
